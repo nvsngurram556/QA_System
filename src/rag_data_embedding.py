@@ -4,7 +4,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings  # Requires: pip install langchain-huggingface
 from langchain_community.vectorstores import FAISS
 from langchain_community.retrievers import BM25Retriever
-from data_preprocess import clean_text, segment_sections
+from rag_data_preprocess import clean_text, segment_sections
 
 def create_faiss_vector_store(chunks, index_path):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")

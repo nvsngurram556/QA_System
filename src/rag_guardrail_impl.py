@@ -1,4 +1,4 @@
-from gen_response import sample_query, generated_answer
+from rag_gen_response import sample_query, generated_answer
 
 def validate_query(query):
     """
