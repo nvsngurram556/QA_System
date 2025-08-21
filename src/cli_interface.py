@@ -3,10 +3,10 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import streamlit as st
 import time
-from data_embedding import faiss_store, bm25_retriever
-from hybrid_retrival import hybrid_retrieve
-from rag_technique import rerank_with_cross_encoder
-from gen_response import generate_response
+from src.rag_data_embedding import faiss_store, bm25_retriever
+from src.rag_hybrid_retrival import hybrid_retrieve
+from src.rag_technique import rerank_with_cross_encoder
+from src.rag_gen_response import generate_response
 
 st.title("Financial QA System")
 

@@ -1,6 +1,6 @@
 
 from langchain_huggingface import HuggingFaceEmbeddings  # Requires: pip install langchain-huggingface
-from data_embedding import process_text, create_faiss_vector_store, create_bm25_retriever, faiss_store, bm25_retriever
+from rag_data_embedding import process_text, create_faiss_vector_store, create_bm25_retriever, faiss_store, bm25_retriever
 import re
 import nltk
 from nltk.corpus import stopwords
